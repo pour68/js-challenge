@@ -1,0 +1,5 @@
+@import "./sections/variables.css";
+@import "./sections/base.css";
+@import "./sections/utils.css";
+@import "./sections/navbar.css";
+@import "./sections/hero.css";

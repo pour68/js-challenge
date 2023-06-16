@@ -1,0 +1,32 @@
+.container {
+    width: 100%;
+    max-width: 1250px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+}
+
+.main {
+    margin-top: var(--header-height);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-medium);
+    border-radius: 32px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+
+.bg-blue {
+    background-color: var(--blue-color);
+}
+
+.bg-white {
+    background-color: var(--red-color);
+}
+
+.bg-black {
+    background-color: var(--black-color);
+}
