@@ -63,11 +63,14 @@
 
 .hero__social {
     position: absolute;
-    top: 50%;
+    max-width: 45px;
+    bottom: 50%;
     transform: translateY(-50%);
     right: 25px;
     font-size: 1.25rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 1rem;
 }
@@ -75,6 +78,7 @@
 .hero__social a {
     color: var(--white-color);
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .hero__social a:hover {
@@ -102,6 +106,6 @@
     }
 
     .hero__social {
-        right: 5px;
+        right: 10px;
     }
 }
