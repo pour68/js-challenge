@@ -4,6 +4,7 @@ const header = document.querySelector("#header");
 const nav = document.querySelector(".nav");
 const navList = document.querySelector(".nav__list");
 const navToggle = document.querySelector(".nav__toggle");
+const navIcon = document.querySelector(".nav__icon");
 
 heroThumbnailImgs.forEach(heroThumbnailImg => {
     heroThumbnailImg.addEventListener("click", (e) => {
@@ -16,4 +17,10 @@ heroThumbnailImgs.forEach(heroThumbnailImg => {
 
 navToggle.addEventListener("click", () => {
     navList.classList.toggle("active");
+
+    if (navIcon.classList.contains("ri-menu-line")) {
+        navIcon.className = "ri-close-line nav__icon";
+    } else {
+        navIcon.className = "ri-menu-line nav__icon";
+    }
 });
