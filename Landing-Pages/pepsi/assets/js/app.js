@@ -10,7 +10,7 @@ heroThumbnailImgs.forEach(heroThumbnailImg => {
     heroThumbnailImg.addEventListener("click", (e) => {
         document.body.className = e.target.dataset.bgColor;
         nav.className = `nav container ${e.target.dataset.bgColor}`;
-        navList.className = `nav__list ${e.target.dataset.bgColor}`;
+        navList.className = `nav__list ${e.target.dataset.bgColor} ${navList.classList.contains("active") && "active"}`;
         heroImg.src = e.target.src;
     });
 });
